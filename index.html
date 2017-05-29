@@ -7,14 +7,14 @@
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style='margin : 0px; overflow: hidden;'>
-	<a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 20; canvasWidth: 240; canvasHeight: 180'>
+	<a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 50; canvasWidth: 240; canvasHeight: 180'>
 		<!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
 		<!-- <a-dodecahedron position='0 0.5 0' color="#FF926B" radius="0.5"></a-dodecahedron> -->
       		<!-- scale="0.1 0.1 0.1" rotation="0 90 0" position='0 0.5 0'  -->
 		<a-image scale="2 2 2" rotation="-90 0 0" position='0 0 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/dealeron.jpg"></a-image>
-<!-- 		<a-collada-model scale="0.4 0.4 0.4" rotation="0 0 0" position='0 2 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/blacksportscar_ROTATED.dae">
+		<a-collada-model scale="0.4 0.4 0.4" rotation="0 0 0" position='0 2 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/blacksportscar_ROTATED.dae">
 			<a-animation attribute="rotation" to="0 0 360" dur="10000" easing='linear' repeat="indefinite"></a-animation>
-		</a-collada-model> -->
+		</a-collada-model>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
 </body>
