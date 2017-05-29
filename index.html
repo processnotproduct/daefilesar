@@ -8,13 +8,15 @@
 </head>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
-		<!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
 		<!-- <a-dodecahedron position='0 0.5 0' color="#FF926B" radius="0.5"></a-dodecahedron> -->
       		<!-- scale="0.1 0.1 0.1" rotation="0 90 0" position='0 0.5 0'  -->
 		<a-image scale="1.5 1.5 1.5" rotation="-90 0 0" position='0 0 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/dealeron.jpg"></a-image>
-		<a-collada-model scale="0.3 0.3 0.3" rotation="0 0 0" position='0 2 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/blacksportscar_ROTATED.dae">
+		<a-box position='0 0.5 0' material='opacity: 0.5;'>
 			<a-animation attribute="rotation" to="0 0 360" dur="10000" easing='linear' repeat="indefinite"></a-animation>
-		</a-collada-model>
+			<a-collada-model scale="0.3 0.3 0.3" rotation="0 0 0" position='0 2 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/blacksportscar_ROTATED.dae">
+				
+			</a-collada-model>
+		</a-box>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
 </body>
