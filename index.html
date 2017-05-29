@@ -1,0 +1,18 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded artoolkit='sourceType: webcam;'>
+<!-- 		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
+<!--       <a-dodecahedron position='0 0.5 0' color="#FF926B" radius="0.5"></a-dodecahedron> -->
+      <!-- scale="0.1 0.1 0.1" rotation="0 90 0" position='0 0.5 0'  -->
+      <a-collada-model scale="0.5 0.5 0.5" rotation="-90 0 0" position='0 0.5 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/Zenvo%20ST1%202010.dae"></a-collada-model>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>
+</html>
