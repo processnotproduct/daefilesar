@@ -15,7 +15,9 @@
 				<a-animation attribute="rotation" to="0 0 360" dur="10000" easing='linear' repeat="indefinite"></a-animation>
 			</a-collada-model> -->
 		
-		<a-obj-model src="test.obj" mtl="test.mtl"></a-obj-model>
+		<a-obj-model position='0 1 0' src="test.obj" mtl="test.mtl">
+			<a-animation attribute="rotation" to="0 0 360" dur="10000" easing='linear' repeat="indefinite"></a-animation>
+		</a-obj-model>
 <!-- 		</a-box> -->
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
