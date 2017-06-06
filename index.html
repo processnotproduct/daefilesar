@@ -5,33 +5,15 @@
 	<title>DealerOn AR Example</title>
 	<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-<!-- 	<script src="https://processnotproduct.github.io/daefilesar/aframe-ar.min.js"></script> -->
 </head>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono;'>
-<!-- 	<a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 50; canvasWidth: 240; canvasHeight: 180'> -->
-<!-- 	<a-scene embedded artoolkit='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;' antialias="true" outline> -->
 		<!-- handle kanji marker -->
 		<a-entity position="0 3 0" sound="src: url(https://processnotproduct.github.io/daefilesar/idle.mp3); autoplay: true; loop: true;"></a-entity>
 		<a-marker preset='kanji'>
 			<a-image scale="1.5 1.5 1.5" rotation="-90 0 0" position='0 0 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/dealeron.jpg"></a-image>
-			<a-entity obj-model="obj: url(https://processnotproduct.github.io/daefilesar/test.obj); mtl: url(https://processnotproduct.github.io/daefilesar/test.mtl)" position='0 1 0' rotation="0 0 -45">
-<!-- 				<a-animation attribute="rotation" to="0 0 360" dur="10000" easing='linear' repeat="indefinite"></a-animation> -->
-			</a-entity>
+			<a-entity obj-model="obj: url(https://processnotproduct.github.io/daefilesar/test.obj); mtl: url(https://processnotproduct.github.io/daefilesar/test.mtl)" position='0 1 0' rotation="0 0 -45"></a-entity>
 		</a-marker>
-		
-<!-- 		<a-image scale="1.5 1.5 1.5" rotation="-90 0 0" position='0 0 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/dealeron.jpg"></a-image> -->
-<!-- 		<a-box position='0 0.5 0' material='opacity: 0.5;'> -->
-			
-<!-- 			<a-collada-model scale="0.5 0.5 0.5" rotation="0 0 0" position='0 1 0' src="https://raw.githubusercontent.com/processnotproduct/daefilesar/master/blacksportscar_ROTATED_DESIMATED.dae">
-				<a-animation attribute="rotation" to="0 0 360" dur="10000" easing='linear' repeat="indefinite"></a-animation>
-			</a-collada-model> -->
-		
-<!-- 		<a-obj-model position='0 1 0' src="test.obj" mtl="test.mtl">
-			<a-animation attribute="rotation" to="0 0 360" dur="10000" easing='linear' repeat="indefinite"></a-animation>
-		</a-obj-model> -->
-<!-- 		</a-box> -->
-<!-- 		<a-marker-camera preset='kanji'></a-marker-camera> -->
 		<a-entity camera></a-entity>
 	</a-scene>
 </body>
