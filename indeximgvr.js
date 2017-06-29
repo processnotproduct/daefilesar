@@ -42,7 +42,7 @@ function onLoad() {
   vrView = new VRView.Player('#vrview', {
     width: '100%',
     height: 480,
-    image: 'MUSTANG360.jpg',
+    image: 'MUSTANG360_v2.jpg',
     is_stereo: false,
     is_autopan_off: true
   });
