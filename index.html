@@ -18,22 +18,24 @@
 	</script>
 </head>
 <body style='background-color:#000; margin:0px; overflow:hidden;'>
-	<a-scene style="-webkit-backface-visibility:hidden; backface-visibility:hidden;" class="shownar" embedded artoolkit='sourceType: webcam; detectionMode: mono;'>
+	<dir class="shownar" style="-webkit-backface-visibility:hidden; backface-visibility:hidden;">
 		<a href="javascript://" class="360button" style="padding:1em;background-color:green;color:white;position:fixed;top:20px;left:20px;">360 Interior View</a>
-		<a-assets>
-			<img id="dlron" src="https://processnotproduct.github.io/daefilesar/Ford-logo-1976-256x256.jpg">
-			<a-asset-item id="test-obj" src="https://processnotproduct.github.io/daefilesar/mustang_test_2.obj"></a-asset-item>
-			<a-asset-item id="test-mtl" src="https://processnotproduct.github.io/daefilesar/mustang_test_2.mtl"></a-asset-item>
-		</a-assets>
-		<a-marker preset='kanji'>
-			<a-image src="#dlron" scale="1 1 1" position='0 0 0' rotation="-90 0 0"></a-image>
-			<a-entity obj-model="obj: #test-obj; mtl: #test-mtl" position='0 0.5 0.2' rotation="0 0 -45"></a-entity>
-		</a-marker>
-		<a-entity camera></a-entity>
-	</a-scene>
+		<a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono;'>
+			<a-assets>
+				<img id="dlron" src="https://processnotproduct.github.io/daefilesar/Ford-logo-1976-256x256.jpg">
+				<a-asset-item id="test-obj" src="https://processnotproduct.github.io/daefilesar/mustang_test_2.obj"></a-asset-item>
+				<a-asset-item id="test-mtl" src="https://processnotproduct.github.io/daefilesar/mustang_test_2.mtl"></a-asset-item>
+			</a-assets>
+			<a-marker preset='kanji'>
+				<a-image src="#dlron" scale="1.5 1.5 1.5" position='0 0 0' rotation="-90 0 0"></a-image>
+				<a-entity obj-model="obj: #test-obj; mtl: #test-mtl" position='0 1 0.25' rotation="0 0 -45"></a-entity>
+			</a-marker>
+			<a-entity camera></a-entity>
+		</a-scene>
+	</dir>
 
 	<div id="vrview" class="hiddenvr" style="width:100%;position:absolute;top:0px;left:0px;display:none;-webkit-backface-visibility:hidden;backface-visibility: hidden;">
-		<a href="javascript://" class="360button" style="padding:1em;background-color:green;color:white;position:fixed;top:20px;left:20px;">AR View</a>
+		<a href="javascript://" class="360button" style="padding:1em;background-color:purple;color:white;position:fixed;top:20px;left:20px;">AR View</a>
 	</div>
 	
     <script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
