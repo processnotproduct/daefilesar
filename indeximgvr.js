@@ -15,28 +15,28 @@
 var vrView;
 
 // All the scenes for the experience
-var scenes = {
-  petra: {
-    image: 'MUSTANG360.jpg',
-    preview: 'MUSTANG360.jpg'
-  },
-  christTheRedeemer: {
-    image: 'christ-redeemer.jpg',
-    preview: 'christ-redeemer-preview.jpg'
-  },
-  machuPicchu: {
-    image: 'machu-picchu.jpg',
-    preview: 'machu-picchu-preview.jpg'
-  },
-  chichenItza: {
-    image: 'chichen-itza.jpg',
-    preview: 'chichen-itza-preview.jpg'
-  },
-  tajMahal: {
-    image: 'taj-mahal.jpg',
-    preview: 'taj-mahal-preview.jpg'
-  },
-};
+// var scenes = {
+//   petra: {
+//     image: 'MUSTANG360.jpg',
+//     preview: 'MUSTANG360.jpg'
+//   },
+//   christTheRedeemer: {
+//     image: 'christ-redeemer.jpg',
+//     preview: 'christ-redeemer-preview.jpg'
+//   },
+//   machuPicchu: {
+//     image: 'machu-picchu.jpg',
+//     preview: 'machu-picchu-preview.jpg'
+//   },
+//   chichenItza: {
+//     image: 'chichen-itza.jpg',
+//     preview: 'chichen-itza-preview.jpg'
+//   },
+//   tajMahal: {
+//     image: 'taj-mahal.jpg',
+//     preview: 'taj-mahal-preview.jpg'
+//   },
+// };
 
 function onLoad() {
   vrView = new VRView.Player('#vrview', {
@@ -53,44 +53,44 @@ function onLoad() {
   vrView.on('error', onVRViewError);
 }
 
-function loadScene(id) {
-  console.log('loadScene', id);
+// function loadScene(id) {
+//   console.log('loadScene', id);
 
-  // Set the image
-  vrView.setContent({
-    image: scenes[id].image,
-    preview: scenes[id].preview,
-    is_autopan_off: true
-  });
+//   // Set the image
+//   vrView.setContent({
+//     image: scenes[id].image,
+//     preview: scenes[id].preview,
+//     is_autopan_off: true
+//   });
 
-  // Unhighlight carousel items
-  var carouselLinks = document.querySelectorAll('ul.carousel li a');
-  for (var i = 0; i < carouselLinks.length; i++) {
-    carouselLinks[i].classList.remove('current');
-  }
-    vrView.getPosition();
-  // Highlight current carousel item
-  document.querySelector('ul.carousel li a[href="#' + id + '"]')
-      .classList.add('current');
-}
+//   // Unhighlight carousel items
+//   var carouselLinks = document.querySelectorAll('ul.carousel li a');
+//   for (var i = 0; i < carouselLinks.length; i++) {
+//     carouselLinks[i].classList.remove('current');
+//   }
+//     vrView.getPosition();
+//   // Highlight current carousel item
+//   document.querySelector('ul.carousel li a[href="#' + id + '"]')
+//       .classList.add('current');
+// }
 
-function onVRViewReady(e) {
-  console.log('onVRViewReady');
+// function onVRViewReady(e) {
+//   console.log('onVRViewReady');
 
-  // Create the carousel links
-  var carouselItems = document.querySelectorAll('ul.carousel li a');
-  for (var i = 0; i < carouselItems.length; i++) {
-    var item = carouselItems[i];
-    item.disabled = false;
+//   // Create the carousel links
+//   var carouselItems = document.querySelectorAll('ul.carousel li a');
+//   for (var i = 0; i < carouselItems.length; i++) {
+//     var item = carouselItems[i];
+//     item.disabled = false;
 
-    item.addEventListener('click', function(event) {
-      event.preventDefault();
-      loadScene(event.target.parentNode.getAttribute('href').substring(1));
-    });
-  }
+//     item.addEventListener('click', function(event) {
+//       event.preventDefault();
+//       loadScene(event.target.parentNode.getAttribute('href').substring(1));
+//     });
+//   }
 
-  loadScene('petra');
-}
+//   loadScene('petra');
+// }
 
 function onModeChange(e) {
   console.log('onModeChange', e.mode);
