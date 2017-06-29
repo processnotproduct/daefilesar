@@ -20,10 +20,10 @@ function onLoad() {
   // Load VR View.
   vrView = new VRView.Player('#vrview', {
     width: '100%',
-    height: 480,
+    height: 2048,
     video: 'Ford Mustang 2015 GT Interior - 360 Video.mp4',
     is_stereo: true,
-    loop: false,
+    loop: true,
     //volume: 0.4,
     //muted: true,
     //is_debug: true,
