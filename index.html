@@ -5,15 +5,15 @@
 	<title>DealerOn AR Example</title>
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link href="https://processnotproduct.github.io/daefilesar/stylevr.css" rel="stylesheet" type="text/css">
-	<script async src="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/aframe/examples/vendor/aframe-v0.6.1-three-r86.js"></script>
-	<script async src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.min.js"></script>
+	<script src="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/aframe/examples/vendor/aframe-v0.6.1-three-r86.js"></script>
+	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <!-- 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
 	<script>
-	jQuery(document).ready(function(){
-	  jQuery(".360button").click(function(){
-	    jQuery(".hiddenvr").slideToggle();
-	    jQuery(".shownar").slideToggle();
+	$(document).ready(function(){
+	  $(".360button").click(function(){
+	    $(".hiddenvr").slideToggle();
+	    $(".shownar").slideToggle();
 	  });
 	});
 	</script>
@@ -38,7 +38,7 @@
 		<a href="javascript://" class="360button" style="padding:1em;background-color:purple;color:white;position:fixed;top:20px;left:20px;">AR View</a>
 	</div>
 	
-    <script async src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-    <script async src="https://processnotproduct.github.io/daefilesar/indeximgvr.js"></script>
+    <script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+    <script src="https://processnotproduct.github.io/daefilesar/indeximgvr.js"></script>
 </body>
 </html>
