@@ -4,38 +4,43 @@
 		"colors" : [
 			{
 				"colorName":"Toyota Red",
-				"colorSwatchClass":"toyotaColor1",
 				"colorHexId":"toyotaHEX1",
 				"colorHexCopyValve":"#D71921",
-				"colorHexOnClickId":"#toyotaHEX1",
 				"colorRgbId":"toyotaRGB1",
-				"colorRgbCopyValve":"rgba(215,25,33,1)",
-				"colorRgbOnClickId":"#toyotaRGB1"
+				"colorRgbCopyValve":"rgba(215,25,33,1)"
+			},
+			{
+				"colorName":"80% Black",
+				"colorHexId":"toyotaHEX2",
+				"colorHexCopyValve":"#58595B",
+				"colorRgbId":"toyotaRGB2",
+				"colorRgbCopyValve":"rgba(215,25,33,1)"
 			}
 		]
 	},
 	{
-		"colorMakeName":"Honderp",
+		"colorMakeName":"Honda",
 		"colors" : [
 			{
-				"colorName":"perp Red",
-				"colorSwatchClass":"toyotaColor1",
+				"colorName":"Honda Blue",
 				"colorHexId":"toyotaHEX1",
-				"colorHexCopyValve":"#D71921",
-				"colorHexOnClickId":"#toyotaHEX1",
+				"colorHexCopyValve":"#007CC3",
 				"colorRgbId":"toyotaRGB1",
-				"colorRgbCopyValve":"rgba(215,25,33,1)",
-				"colorRgbOnClickId":"#toyotaRGB1"
+				"colorRgbCopyValve":"rgba(0,124,195,1)"
 			},
 			{
-				"colorName":"perp burb",
-				"colorSwatchClass":"toyotaColor1",
+				"colorName":"Honda Grey",
 				"colorHexId":"toyotaHEX1",
-				"colorHexCopyValve":"#D71921",
-				"colorHexOnClickId":"#toyotaHEX1",
+				"colorHexCopyValve":"#6D9598",
 				"colorRgbId":"toyotaRGB1",
-				"colorRgbCopyValve":"rgba(215,25,33,1)",
-				"colorRgbOnClickId":"#toyotaRGB1"
+				"colorRgbCopyValve":"rgba(109,149,152,1)"
+			},
+			{
+				"colorName":"Light Grey",
+				"colorHexId":"toyotaHEX1",
+				"colorHexCopyValve":"#BABABA",
+				"colorRgbId":"toyotaRGB1",
+				"colorRgbCopyValve":"rgba(186,186,186,1)"
 			}
 		]
 	}
