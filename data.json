@@ -12,6 +12,31 @@
 				"colorRgbCopyValve":"rgba(215,25,33,1)",
 				"colorRgbOnClickId":"#toyotaRGB1"
 			}
-	]}
-	
+		]
+	},
+	{
+		"colorMakeName":"Honderp",
+		"colors" : [
+			{
+				"colorName":"perp Red",
+				"colorSwatchClass":"toyotaColor1",
+				"colorHexId":"toyotaHEX1",
+				"colorHexCopyValve":"#D71921",
+				"colorHexOnClickId":"#toyotaHEX1",
+				"colorRgbId":"toyotaRGB1",
+				"colorRgbCopyValve":"rgba(215,25,33,1)",
+				"colorRgbOnClickId":"#toyotaRGB1"
+			},
+			{
+				"colorName":"perp burb",
+				"colorSwatchClass":"toyotaColor1",
+				"colorHexId":"toyotaHEX1",
+				"colorHexCopyValve":"#D71921",
+				"colorHexOnClickId":"#toyotaHEX1",
+				"colorRgbId":"toyotaRGB1",
+				"colorRgbCopyValve":"rgba(215,25,33,1)",
+				"colorRgbOnClickId":"#toyotaRGB1"
+			}
+		]
+	}
 ]}
