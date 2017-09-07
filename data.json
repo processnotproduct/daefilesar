@@ -1,0 +1,25 @@
+{ "oemColors" : [
+	{
+		"colorMakeName":"Toyota"
+	},
+	{
+		"colorName":"Toyota Red",
+		"colorSwatchClass":"toyotaColor1",
+		"colorHexId":"toyotaHEX1",
+		"colorHexCopyValve":"#D71921",
+		"colorHexOnClickId":"#toyotaHEX1",
+		"colorRgbId":"toyotaRGB1",
+		"colorRgbCopyValve":"rgba(215,25,33,1)",
+		"colorRgbOnClickId":"#toyotaRGB1"
+	},
+	{
+		"colorName":"80% Black",
+		"colorSwatchClass":"toyotaColor2",
+		"colorHexId":"toyotaHEX2",
+		"colorHexCopyValve":"#58595B",
+		"colorHexOnClickId":"#toyotaHEX2",
+		"colorRgbId":"toyotaRGB2",
+		"colorRgbCopyValve":"rgba(88,89,91,1)",
+		"colorRgbOnClickId":"#toyotaRGB2"
+	}
+]}
