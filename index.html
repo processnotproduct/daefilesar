@@ -11,7 +11,7 @@
   </head>
   <body style='background-color:#000; margin:0px; overflow:hidden;'>
   
-    <a-scene class="shownar" style="-webkit-backface-visibility:hidden; backface-visibility:hidden;" embedded arjs='sourceType: webcam;'>
+    <a-scene stats embedded arjs='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
       <a-assets>
         <img id="dlron" src="https://processnotproduct.github.io/daefilesar/Ford-logo-1976-256x256.jpg">
         <a-asset-item id="test-obj" src="https://processnotproduct.github.io/daefilesar/mustang_test_7.obj"></a-asset-item>
