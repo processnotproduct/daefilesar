@@ -29,7 +29,7 @@
 </head>
 <body style='background-color:#000; margin:0px; overflow:hidden;'>
 
-	<a-scene class="shownar" style="-webkit-backface-visibility:hidden; backface-visibility:hidden;" embedded artoolkit='sourceType: webcam;'>
+	<a-scene class="shownar" style="-webkit-backface-visibility:hidden; backface-visibility:hidden;" embedded arjs='sourceType: webcam;'>
 		<a-assets>
 			<img id="dlron" src="https://processnotproduct.github.io/daefilesar/Ford-logo-1976-256x256.jpg" crossorigin="anonymous">
 			<a-asset-item id="test-obj" src="https://processnotproduct.github.io/daefilesar/mustang_test_7.obj"></a-asset-item>
@@ -39,12 +39,14 @@
 			<a-image src="#dlron" scale="1 1 1" position='0 0 0' rotation="-90 0 0"></a-image>
 			<a-entity obj-model="obj: #test-obj; mtl: #test-mtl" position='0 1 0.4' rotation="0 0 0"></a-entity>
 		</a-marker>
-		<a-entity camera></a-entity>
+<!-- 		<a-entity camera></a-entity> -->
+		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
-	<a href="javascript://" class="shownar 360button" style="padding:1em;background-color:green;color:white;position:fixed;top:20px;left:20px;">360 Interior View</a>
 
 	<div id="vrview" class="hiddenvr" style="width:100%;position:absolute;top:0px;left:0px;display:none;-webkit-backface-visibility:hidden;backface-visibility: hidden;">
 		<a href="javascript://" class="360button" style="padding:1em;background-color:purple;color:white;position:fixed;top:20px;left:20px;">AR View</a>
 	</div>
+	
+	<a href="javascript://" class="shownar 360button" style="padding:1em;background-color:green;color:white;position:fixed;top:20px;left:20px;">360 Interior View</a>
 </body>
 </html>
